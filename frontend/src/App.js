@@ -6,7 +6,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomeScreen from './screens/HomeScreen';
 import ProductDetailScreen from './screens/ProductDetailScreen';
-
 function App() {
   return <Router>
     <Header />
