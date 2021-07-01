@@ -10,7 +10,11 @@ app.get('/', (req, res) => {
     res.send('API running ...');
 })
 
+app.use(express.json({ extended: false }));
+
+
 app.use('/api/products', require('./routes/product'));
+app.use('/api/users', require('./routes/user'));
 
 app.use(require('./middleware/error').notFound);
 
